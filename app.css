@@ -1,0 +1,43 @@
+/* app.css */
+
+.piano-keys {
+  position: relative;
+  width: 60px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.piano-keys.black {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  width: 40px;
+  height: 130px;
+  background-color: #000;
+  z-index: 1;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+#button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#button-box .piano-keys:nth-child(1),
+#button-box .piano-keys:nth-child(2),
+#button-box .piano-keys:nth-child(4),
+#button-box .piano-keys:nth-child(5),
+#button-box .piano-keys:nth-child(6) {
+  margin-right: 10px;
+}
+
+#button-box .piano-keys:nth-child(3),
+#button-box .piano-keys:nth-child(7) {
+  margin-right: -calc(60px / 3 * 2 + 10px);
+}
